@@ -1,2 +1,2 @@
 # Entry-app-projects
-Restaurent menu page
+Restaurant menu page
