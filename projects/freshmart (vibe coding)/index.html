@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FreshMart brings fresh fruits, vegetables, and quality groceries to your neighborhood.">
+  <title>FreshMart | Freshness for Every Day</title>
+
+  <!-- Bootstrap 5 provides the responsive grid, cards, buttons, and utilities. -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation: the checkbox and CSS create a small-screen menu without JavaScript. -->
+  <nav class="navbar navbar-expand-lg site-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home" aria-label="FreshMart home">
+        <span class="brand-icon" aria-hidden="true">✿</span> FreshMart
+      </a>
+
+      <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="Open navigation menu">
+      <label class="menu-button" for="menu-toggle" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <div class="nav-links">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#products">Products</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="cart-link" href="#products" aria-label="Shopping cart">
+          <span aria-hidden="true">🛒</span> <span class="cart-label">Cart</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Home: introductory banner and a button linking down to the products. -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <p class="eyebrow">Good food, grown with care</p>
+          <h1>Freshness for<br>every day.</h1>
+          <p class="hero-description">Welcome to FreshMart, your neighborhood stop for vibrant fruits, crisp vegetables, and quality groceries.</p>
+          <a class="btn btn-fresh btn-lg rounded-pill" href="#products">Shop Now <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About: a short introduction to the shop and what it sells. -->
+    <section class="section-padding about-section" id="about">
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-6">
+            <img class="about-image" src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1100&q=85"
+              alt="A fresh salad made with colorful vegetables" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <p class="eyebrow">A little about us</p>
+            <h2 class="section-title">Your local market, full of goodness.</h2>
+            <p class="section-copy">At FreshMart, we make it simple to bring something fresh to your table. We work with trusted growers to offer seasonal fruits, everyday vegetables, and quality groceries selected with care.</p>
+            <p class="section-copy">From sweet apples and juicy oranges to garden-fresh tomatoes and potatoes, our friendly neighborhood shop has the essentials for wholesome meals and happy homes.</p>
+            <a class="btn btn-outline-fresh rounded-pill" href="#contact">Visit or contact us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products: Bootstrap's responsive row-cols grid changes from 1 to 2 to 3 columns. -->
+    <section class="section-padding products-section" id="products">
+      <div class="container">
+        <div class="section-heading text-center">
+          <p class="eyebrow">Picked fresh for you</p>
+          <h2 class="section-title">Our Fresh Picks</h2>
+          <p class="section-copy">Everyday favorites for your kitchen and your table.</p>
+        </div>
+
+        <h3 class="category-title">Fruits</h3>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 mb-5">
+          <div class="col">
+            <article class="card product-card h-100">
+              <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=900&q=85" class="card-img-top product-image" alt="Fresh red apples" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <h4 class="card-title">Crisp Apples</h4>
+                <p class="card-text">Sweet, crunchy apples that make a satisfying snack or lunchbox treat.</p>
+                <div class="product-bottom mt-auto">
+                  <span class="product-price">₹160 <small>/ kg</small></span>
+                  <button class="btn btn-fresh btn-sm rounded-pill" type="button">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card product-card h-100">
+              <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=900&q=85" class="card-img-top product-image" alt="Ripe yellow bananas" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <h4 class="card-title">Sweet Bananas</h4>
+                <p class="card-text">Naturally sweet bananas, perfect for breakfast, smoothies, or a quick snack.</p>
+                <div class="product-bottom mt-auto">
+                  <span class="product-price">₹60 <small>/ kg</small></span>
+                  <button class="btn btn-fresh btn-sm rounded-pill" type="button">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card product-card h-100">
+              <img src="https://images.unsplash.com/photo-1547514701-42782101795e?auto=format&fit=crop&w=900&q=85" class="card-img-top product-image" alt="Fresh oranges" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <h4 class="card-title">Juicy Oranges</h4>
+                <p class="card-text">Bright, juicy oranges with a refreshing citrus flavor, great for any time of day.</p>
+                <div class="product-bottom mt-auto">
+                  <span class="product-price">₹90 <small>/ kg</small></span>
+                  <button class="btn btn-fresh btn-sm rounded-pill" type="button">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <h3 class="category-title">Vegetables</h3>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <article class="card product-card h-100">
+              <img src="https://images.unsplash.com/photo-1546094096-0df4bcaaa337?auto=format&fit=crop&w=900&q=85" class="card-img-top product-image" alt="Fresh red tomatoes" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <h4 class="card-title">Garden Tomatoes</h4>
+                <p class="card-text">Ripe and flavorful tomatoes for fresh salads, sauces, and home-cooked meals.</p>
+                <div class="product-bottom mt-auto">
+                  <span class="product-price">₹50 <small>/ kg</small></span>
+                  <button class="btn btn-fresh btn-sm rounded-pill" type="button">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card product-card h-100">
+              <img src="https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?auto=format&fit=crop&w=900&q=85" class="card-img-top product-image" alt="Fresh orange carrots" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <h4 class="card-title">Crunchy Carrots</h4>
+                <p class="card-text">Naturally sweet carrots that are delicious raw, roasted, or added to your favorite dishes.</p>
+                <div class="product-bottom mt-auto">
+                  <span class="product-price">₹70 <small>/ kg</small></span>
+                  <button class="btn btn-fresh btn-sm rounded-pill" type="button">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card product-card h-100">
+              <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=900&q=85" class="card-img-top product-image" alt="Fresh potatoes" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <h4 class="card-title">Everyday Potatoes</h4>
+                <p class="card-text">A kitchen staple for comforting roasts, curries, mashes, and weeknight dinners.</p>
+                <div class="product-bottom mt-auto">
+                  <span class="product-price">₹40 <small>/ kg</small></span>
+                  <button class="btn btn-fresh btn-sm rounded-pill" type="button">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact: shop details and a static form layout (no backend submission). -->
+    <section class="section-padding contact-section" id="contact">
+      <div class="container">
+        <div class="section-heading text-center">
+          <p class="eyebrow">We'd love to hear from you</p>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-copy">Questions about our produce? Stop by or send us a note.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <div class="contact-details h-100">
+              <h3 class="h4 mb-4">Come say hello</h3>
+              <p><strong>Shop owner:</strong><br>Ananya Rao</p>
+              <p><strong>Phone:</strong><br><a href="tel:+919876543210">+91 98765 43210</a></p>
+              <p><strong>Email:</strong><br><a href="mailto:hello@freshmart.example">hello@freshmart.example</a></p>
+              <p><strong>Shop address:</strong><br>12 Market Lane, Kochi, Kerala</p>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <form class="contact-form" action="#" method="get">
+              <div class="mb-3">
+                <label for="customer-name" class="form-label">Your name</label>
+                <input type="text" class="form-control" id="customer-name" name="name" placeholder="Enter your name" required>
+              </div>
+              <div class="mb-3">
+                <label for="customer-email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="customer-email" name="email" placeholder="you@example.com" required>
+              </div>
+              <div class="mb-3">
+                <label for="customer-message" class="form-label">Message</label>
+                <textarea class="form-control" id="customer-message" name="message" rows="4" placeholder="How can we help?" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-fresh rounded-pill px-4">Submit</button>
+              <p class="form-note mb-0 mt-2">This sample form is visual only; it does not send or store messages.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer: quick links and simple social links. -->
+  <footer class="site-footer py-4">
+    <div class="container">
+      <div class="row align-items-center gy-3">
+        <div class="col-md-4 text-center text-md-start">
+          <a class="footer-brand" href="#home">FreshMart</a>
+          <p class="small mb-0">Freshness for every day.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="footer-links justify-content-center">
+            <a href="#home">Home</a><a href="#about">About</a><a href="#products">Products</a><a href="#contact">Contact</a>
+          </div>
+        </div>
+        <div class="col-md-4 text-center text-md-end">
+          <div class="social-links">
+            <a href="https://www.facebook.com/" aria-label="Facebook">f</a>
+            <a href="https://www.instagram.com/" aria-label="Instagram">ig</a>
+            <a href="https://www.youtube.com/" aria-label="YouTube">▶</a>
+          </div>
+          <p class="small mb-0 mt-2">&copy; 2026 FreshMart. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
